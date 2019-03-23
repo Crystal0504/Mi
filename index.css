@@ -280,22 +280,13 @@
   width: 12.75rem;
   padding-top: 2.1875rem;
 }
-.site-header .header-nav-menu .sub-menu ul li .flags {
-  width: 12.75rem;
-  height: 1.375rem;
-  z-index: 1;
-  text-align: center;
+.site-header .header-nav-menu .sub-menu ul li:not(:first-child):before {
+  content: '';
+  display: block;
+  width: 0rem;
+  height: 6.25rem;
+  border-left: 0.0625rem solid #e0e0e0;
   position: absolute;
-}
-.site-header .header-nav-menu .sub-menu ul li .flags .flag {
-  width: 1.5rem;
-  height: 1.125rem;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
-  color: #ff6700;
-  display: inline-block;
-  border: 0.0625rem solid #ff6700;
-  padding: 0.0625rem 1.25rem;
 }
 .site-header .header-nav-menu .sub-menu ul li a {
   text-decoration: none;
@@ -313,11 +304,6 @@
 .site-header .header-nav-menu .sub-menu ul li .price {
   color: #ff6700;
 }
-.site-header .header-nav-menu .sub-menu ul li:not(:first-child):before {
-  content: "";
-  display: block;
-  width: 0rem;
-  height: 6.25rem;
-  border-left: 0.0625rem solid #e0e0e0;
-  position: absolute;
+.site-header .header-nav-menu .sub-menu ul li .text {
+  color: #333;
 }
