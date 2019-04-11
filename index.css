@@ -162,6 +162,8 @@
   line-height: 4.75rem;
 }
 .site-header .head-nav .nav-list li a {
+  display: block;
+  height: inherit;
   color: #333;
   text-decoration: none;
   padding-left: 0.625rem;
@@ -273,6 +275,7 @@
   list-style: none;
   overflow: hidden;
   height: inherit;
+  position: relative;
 }
 .site-header .header-nav-menu .sub-menu ul li {
   text-align: center;

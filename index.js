@@ -157,7 +157,7 @@ $(document).ready(function() {
 		});
 		navMenuArray.length=0;
 		headerNavMenu.slideDown(300);
-		var timer=setTimeout("$('.header-nav-menu').slideDown(300)",300);
+		var timer=setTimeout("$('.header-nav-menu').slideDown(300)",200);
 		navMenuArray.push(timer);
 	}
 	
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		});
 		navMenuArray.length=0;
 		headerNavMenu.slideDown(300);
-		var timer=setTimeout("$('.header-nav-menu').slideUp(300)",300);
+		var timer=setTimeout("$('.header-nav-menu').slideUp(300)",200);
 		navMenuArray.push(timer);
 	}
 
@@ -241,11 +241,20 @@ $(document).ready(function() {
 	});
 	
 	//鼠标移入标题栏显示弹出菜单
-	$(".nav-list li:gt(0):lt(8),.header-nav-menu").mouseenter(function(){
+	$(".nav-list li:gt(0):lt(8) a,.header-nav-menu").mouseenter(function(){
+		var menu=$(this).data("menu");
+		if(menu!=null){
+			for(var i=1;i<=8;i++){
+				$("#menu-"+i).css("display","none");
+			if(menu=="menu-"+i)	{
+				$("#menu-"+i).css("display","block");
+			}
+			}
+		}
 		HeaderSearch.prototype.showNavMenu();
 	});
 	//鼠标移出标题栏隐藏弹出菜单
-	$(".nav-list li:gt(0):lt(8),.header-nav-menu").mouseleave(function(){
+	$(".nav-list li:gt(0):lt(8) a,.header-nav-menu").mouseleave(function(){
 		HeaderSearch.prototype.hideNavMenu();
 	});
 	
