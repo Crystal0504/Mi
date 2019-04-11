@@ -4,8 +4,7 @@
 @font-face {
 	font-family: 'iconfont';
 	src: url('font/iconfont.eot');
-	src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
-		url('font/iconfont.woff2') format('woff2'), url('font/iconfont.woff') format('woff'),
+	src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff2') format('woff2'), url('font/iconfont.woff') format('woff'),
 		url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
 }
 
@@ -163,17 +162,52 @@
 
 		/* 标题栏文字样式 */
 		.nav-list {
+			@height: 88/16rem;
 			width: 820/16rem;
 			margin-top: 0;
 			margin-bottom: 0;
 			padding-left: 30/16rem;
 			list-style: none;
-			float: left;
 			color: #333;
 			font-size: 1rem;
 			padding-top: 12/16rem;
-			height: 88/16rem;
-			li {
+			height: @height;
+			.nav-category {
+				float: left;
+				position: relative;
+				width: 127/16rem;
+				height: @height;
+				padding-right: 15/16rem;
+				.site-category {
+					position: absolute;
+					top: @height;
+					left: -92/16rem;
+					.site-category-list {
+						padding-top: 20/16rem;
+						padding-bottom: 20/16rem;
+						padding-left: 0;
+						list-style: none;
+						background-color: rgba(0, 0, 0, 0.6);
+						color: #fff;
+						.category-item {
+							@height: 42/16rem;
+							float: none;
+							width: 234/16rem;
+							height: @height;
+							.title {
+								display: block;
+								height: inherit;
+								line-height: @height;
+								font-size: 14/16rem;
+								color: #fff;
+								margin-left: 30/16rem;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+			.nav-item {
 				float: left;
 				height: inherit;
 				line-height: 76/16rem;
@@ -188,10 +222,6 @@
 						color: @color;
 					}
 				}
-			}
-			.nav-category {
-				width: 127/16rem;
-				padding-right: 15/16rem;
 			}
 		}
 	}
@@ -253,6 +283,7 @@
 			@border: 1/16rem solid @color;
 			position: absolute;
 			width: 243.75/16rem;
+			background-color: #fff;
 			top: 50/16rem;
 			border-top: none;
 			border-left: @border;
@@ -286,9 +317,12 @@
 		}
 	}
 	.header-nav-menu {
+		width: 100%;
 		height: 229/16rem;
+		background-color: #fff;
 		border-top: @border-common;
 		display: none;
+		position: absolute;
 		border-bottom: @border-common;
 		box-shadow: 0 3/16rem 4/16rem rgba(0, 0, 0, 0.18);
 		.sub-menu {
@@ -337,5 +371,19 @@
 				}
 			}
 		}
+	}
+}
+.home-hero-container {
+	clear: both;
+	.home-hero {
+		.home-hero-slider {
+			height: 460/16rem;
+			overflow: hidden;
+			img {
+				height: 460/16rem;
+			}
+		}
+	}
+	.home-star-goods {
 	}
 }
