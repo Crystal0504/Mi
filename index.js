@@ -241,7 +241,7 @@ $(document).ready(function() {
 	});
 	
 	//鼠标移入标题栏显示弹出菜单
-	$(".nav-list li:gt(0):lt(8) a,.header-nav-menu").mouseenter(function(){
+	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseenter(function(){
 		var menu=$(this).data("menu");
 		if(menu!=null){
 			for(var i=1;i<=8;i++){
@@ -254,7 +254,7 @@ $(document).ready(function() {
 		HeaderSearch.prototype.showNavMenu();
 	});
 	//鼠标移出标题栏隐藏弹出菜单
-	$(".nav-list li:gt(0):lt(8) a,.header-nav-menu").mouseleave(function(){
+	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseleave(function(){
 		HeaderSearch.prototype.hideNavMenu();
 	});
 	
