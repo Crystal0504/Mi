@@ -191,6 +191,7 @@
 				height: @height;
 				padding-right: 15/16rem;
 				.site-category {
+					font-size: 14/16rem;
 					position: absolute;
 					top: @height;
 					left: -92/16rem;
@@ -220,6 +221,77 @@
 									position: absolute;
 									right: 20/16rem;
 								}
+							}
+							.children{
+								height: 458/16rem;
+								display: block;
+								background-color: #fff;
+								position: absolute;
+								left: 234/16rem;
+								top:0;
+								border-left: none;
+								border-top: @border-common;
+								border-right: @border-common;
+								border-bottom: @border-common;
+								box-shadow: 0 8/16rem 1rem rgba(0, 0, 0, 0.18);
+								.children-list{
+									// background-color: green;
+									width: 248/16rem;
+									float: left;
+									height: inherit;
+									list-style: none;
+									padding-top: 2/16rem;
+									padding-left: 0;
+									padding-bottom: 2/16rem;
+									padding-right: 0;
+									margin: 0;
+									.star-goods{
+										float: left;
+										width: inherit;
+										height: 76/16rem;
+										position: relative;
+										.link{
+											display: block;
+											line-height: 40/16rem;
+											text-decoration: none;
+											color: #333;
+											padding:18/16rem 20/16rem;
+											.thumb{
+												width: 40/16rem;
+												height: 40/16rem;
+												margin-right: 12/16rem;
+												vertical-align: middle;
+											}
+											.text{
+												display: inline-block;
+												text-align: left;
+												font-size: 14/16rem;
+												line-height: 40/16rem;
+											}
+										}
+										.btn{
+											display: inline-block;
+											width: 58/16rem;
+											height: 22/16rem;
+											text-decoration: none;
+											border: 1/16rem solid #ff6700;
+											text-align: center;
+											color: @color;
+											font-size: 12/16rem;
+											line-height: 22/16rem;
+											position: absolute;
+											top: 26/16rem;
+										}
+									}
+								}
+								.children-list-col-4{
+									width: 248/16rem;
+									height: 458/16rem;
+								}
+							}
+							.children-col-3{
+								float: left;
+								width: 992/16rem;
 							}
 						}
 					}
