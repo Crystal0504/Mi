@@ -172,6 +172,7 @@
   padding-right: 0.9375rem;
 }
 .site-header .head-nav .nav-list .nav-category .site-category {
+  font-size: 0.875rem;
   position: absolute;
   top: 5.5rem;
   left: -5.75rem;
@@ -203,6 +204,76 @@
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   right: 1.25rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children {
+  height: 28.625rem;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  left: 14.625rem;
+  top: 0;
+  border-left: none;
+  border-top: 0.0625rem solid #e0e0e0;
+  border-right: 0.0625rem solid #e0e0e0;
+  border-bottom: 0.0625rem solid #e0e0e0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list {
+  width: 15.5rem;
+  float: left;
+  height: inherit;
+  list-style: none;
+  padding-top: 0.125rem;
+  padding-left: 0;
+  padding-bottom: 0.125rem;
+  padding-right: 0;
+  margin: 0;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods {
+  float: left;
+  width: inherit;
+  height: 4.75rem;
+  position: relative;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link {
+  display: block;
+  line-height: 2.5rem;
+  text-decoration: none;
+  color: #333;
+  padding: 1.125rem 1.25rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link .thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link .text {
+  display: inline-block;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .btn {
+  display: inline-block;
+  width: 3.625rem;
+  height: 1.375rem;
+  text-decoration: none;
+  border: 0.0625rem solid #ff6700;
+  text-align: center;
+  color: #ff6700;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  position: absolute;
+  top: 1.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-4 {
+  width: 15.5rem;
+  height: 28.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children-col-3 {
+  float: left;
+  width: 62rem;
 }
 .site-header .head-nav .nav-list .nav-item {
   float: left;
