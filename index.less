@@ -251,11 +251,18 @@
 										height: 76/16rem;
 										position: relative;
 										.link{
+											width: 225/16rem;
 											display: block;
 											line-height: 40/16rem;
 											text-decoration: none;
 											color: #333;
 											padding:18/16rem 20/16rem;
+											transition-property: all;
+											transition-duration: 0.2s;
+											transition-timing-function: ease;
+											&:hover{
+												color: @color;
+											}
 											.thumb{
 												width: 40/16rem;
 												height: 40/16rem;
@@ -285,9 +292,14 @@
 									}
 								}
 								.children-list-col-4{
+									float: left;
 									width: 248/16rem;
 									height: 458/16rem;
 								}
+							}
+							.children-col-2{
+								width: 530/16rem;
+								height: 458/16rem;
 							}
 							.children-col-3{
 								float: left;
