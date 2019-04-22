@@ -236,11 +236,18 @@
   position: relative;
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link {
+  width: 14.0625rem;
   display: block;
   line-height: 2.5rem;
   text-decoration: none;
   color: #333;
   padding: 1.125rem 1.25rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link:hover {
+  color: #ff6700;
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list .star-goods .link .thumb {
   width: 2.5rem;
@@ -268,7 +275,12 @@
   top: 1.625rem;
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-4 {
+  float: left;
   width: 15.5rem;
+  height: 28.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children-col-2 {
+  width: 33.125rem;
   height: 28.625rem;
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children-col-3 {
