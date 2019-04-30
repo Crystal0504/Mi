@@ -212,6 +212,7 @@
   position: absolute;
   left: 14.625rem;
   top: 0;
+  right: 0;
   border-left: none;
   border-top: 0.0625rem solid #e0e0e0;
   border-right: 0.0625rem solid #e0e0e0;
@@ -274,6 +275,21 @@
   position: absolute;
   top: 1.625rem;
 }
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-1 {
+  float: left;
+  width: 16.5625rem;
+  height: 28.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-2 {
+  float: left;
+  width: 16.5625rem;
+  height: 28.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-3 {
+  float: left;
+  width: 16.5625rem;
+  height: 28.625rem;
+}
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children .children-list-col-4 {
   float: left;
   width: 15.5rem;
@@ -284,6 +300,10 @@
   height: 28.625rem;
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children-col-3 {
+  width: 49.6875rem;
+  height: 28.625rem;
+}
+.site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children-col-4 {
   float: left;
   width: 62rem;
 }
