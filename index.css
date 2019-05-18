@@ -207,7 +207,7 @@
 }
 .site-header .head-nav .nav-list .nav-category .site-category .site-category-list .category-item .children {
   height: 28.625rem;
-  display: block;
+  display: none;
   background-color: #fff;
   position: absolute;
   left: 14.625rem;
