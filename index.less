@@ -18,15 +18,15 @@
 }
 
 .icon-arrow-right-copy-copy:before {
-  content: "\e603";
+	content: '\e603';
 }
 
 .icon-gouwuche:before {
-  content: "\e634";
+	content: '\e634';
 }
 
 .icon-fangdajing:before {
-  content: "\e63d";
+	content: '\e63d';
 }
 
 .container {
@@ -193,6 +193,7 @@
 				.site-category {
 					font-size: 14/16rem;
 					position: absolute;
+					z-index: 98;
 					top: @height;
 					left: -92/16rem;
 					.site-category-list {
@@ -207,6 +208,12 @@
 							float: none;
 							width: 234/16rem;
 							height: @height;
+							&:hover {
+								background-color: @color;
+							}
+							&:hover > .children {
+								display: block;
+							}
 							.title {
 								display: block;
 								height: inherit;
@@ -215,27 +222,27 @@
 								color: #fff;
 								margin-left: 30/16rem;
 								text-decoration: none;
-								i{
+								i {
 									font-size: 1rem;
 									color: rgba(255, 255, 255, 0.5);
 									position: absolute;
 									right: 20/16rem;
 								}
 							}
-							.children{
+							.children {
 								height: 458/16rem;
 								display: none;
 								background-color: #fff;
 								position: absolute;
 								left: 234/16rem;
-								top:0;
+								top: 0;
 								right: 0;
 								border-left: none;
 								border-top: @border-common;
 								border-right: @border-common;
 								border-bottom: @border-common;
 								box-shadow: 0 8/16rem 1rem rgba(0, 0, 0, 0.18);
-								.children-list{
+								.children-list {
 									// background-color: green;
 									width: 248/16rem;
 									float: left;
@@ -246,38 +253,38 @@
 									padding-bottom: 2/16rem;
 									padding-right: 0;
 									margin: 0;
-									.star-goods{
+									.star-goods {
 										float: left;
 										width: inherit;
 										height: 76/16rem;
 										position: relative;
-										.link{
+										.link {
 											width: 225/16rem;
 											display: block;
 											line-height: 40/16rem;
 											text-decoration: none;
 											color: #333;
-											padding:18/16rem 20/16rem;
+											padding: 18/16rem 20/16rem;
 											transition-property: all;
 											transition-duration: 0.2s;
 											transition-timing-function: ease;
-											&:hover{
+											&:hover {
 												color: @color;
 											}
-											.thumb{
+											.thumb {
 												width: 40/16rem;
 												height: 40/16rem;
 												margin-right: 12/16rem;
 												vertical-align: middle;
 											}
-											.text{
+											.text {
 												display: inline-block;
 												text-align: left;
 												font-size: 14/16rem;
 												line-height: 40/16rem;
 											}
 										}
-										.btn{
+										.btn {
 											display: inline-block;
 											width: 58/16rem;
 											height: 22/16rem;
@@ -292,36 +299,36 @@
 										}
 									}
 								}
-								.children-list-col-1{
+								.children-list-col-1 {
 									float: left;
 									width: 265/16rem;
 									height: 458/16rem;
 								}
-								.children-list-col-2{
+								.children-list-col-2 {
 									float: left;
 									width: 265/16rem;
 									height: 458/16rem;
 								}
-								.children-list-col-3{
+								.children-list-col-3 {
 									float: left;
 									width: 265/16rem;
 									height: 458/16rem;
 								}
-								.children-list-col-4{
+								.children-list-col-4 {
 									float: left;
 									width: 248/16rem;
 									height: 458/16rem;
 								}
 							}
-							.children-col-2{
+							.children-col-2 {
 								width: 530/16rem;
 								height: 458/16rem;
 							}
-							.children-col-3{
+							.children-col-3 {
 								width: 795/16rem;
 								height: 458/16rem;
 							}
-							.children-col-4{
+							.children-col-4 {
 								float: left;
 								width: 992/16rem;
 							}
@@ -407,6 +414,7 @@
 			width: 243.75/16rem;
 			background-color: #fff;
 			top: 50/16rem;
+			z-index: 99;
 			border-top: none;
 			border-left: @border;
 			border-right: @border;
@@ -439,6 +447,7 @@
 		}
 	}
 	.header-nav-menu {
+		z-index: 99;
 		width: 100%;
 		height: 229/16rem;
 		background-color: #fff;
@@ -501,8 +510,74 @@
 		.home-hero-slider {
 			height: 460/16rem;
 			overflow: hidden;
-			img {
-				height: 460/16rem;
+			position: relative;
+			.ui-viewport {
+				img {
+					height: 460/16rem;
+					position: absolute;
+					opacity: 0;
+					transition-property: all;
+					transition-duration: 1s;
+					transition-timing-function: ease;
+				}
+				img:first-child{
+					opacity: 1;
+				}
+			}
+			.ui-controls {
+				.ui-controls-direction {
+					a{
+						position: absolute;
+						top: 50%;
+						z-index: 51;
+						margin-top: -35/16rem;;
+						display: block;
+						height: 69/16rem;
+						width: 41/16rem;
+					}
+					.ui-prev {
+						left: 234/16rem;
+						background-image: url(img/icon-slides.png);
+						background-position: -84/16rem 0;
+						&:hover{
+							background-position: 0 0;
+						}
+					}
+					.ui-next {
+						right: 0;
+						background-image: url(img/icon-slides.png);
+						background-position: -125/16rem 0;
+						&:hover{
+							background-position: -42/16rem 0;
+						}
+					}
+				}
+				.ui-paper{
+					width: 400/16rem;
+					height: 18/16rem;
+					position: absolute;
+					z-index: 51;
+					bottom: 20/16rem;
+					right: 30/16rem;
+					text-align: right;
+					.ui-paper-link{
+						display: inline-block;
+						width: 6/16rem;
+						height: 6/16rem;
+						border: 2px solid rgba(255, 255, 255, 0.3);
+						border-radius: 5/16rem;
+						background-color: rgba(0, 0, 0, 0.4);
+						margin-left: 3/16rem;
+						margin-right: 3/16rem;
+						transition-property: all;
+						transition-duration: 0.2s;
+						transition-timing-function: ease;
+					}
+					.active{
+						background-color: rgba(255, 255, 255, 0.4) !important;
+						border-color: rgba(0, 0, 0, 0.4) !important;
+					}
+				}
 			}
 		}
 	}
