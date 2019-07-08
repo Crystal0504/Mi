@@ -68,6 +68,8 @@ $(document).ready(function() {
 			return new TopBarCart();
 		} else if (key == "HeaderSearch") {
 			return new HeaderSearch();
+		}else if(key=="HomeHeroSlider"){
+			return new HomeHeroSlider();
 		}
 	}
 	// 调用方法
@@ -253,6 +255,7 @@ $(document).ready(function() {
 		}
 		HeaderSearch.prototype.showNavMenu();
 	});
+	
 	//鼠标移出标题栏隐藏弹出菜单
 	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseleave(function(){
 		HeaderSearch.prototype.hideNavMenu();
@@ -260,4 +263,56 @@ $(document).ready(function() {
 	
 	var headSearch = factory("HeaderSearch");
 	headSearch.mouse();
+	
+	//大英雄区图片轮播效果
+	function HomeHeroSlider(){
+		
+	}
+	
+	//记录大英雄区轮播图片序号	
+	HomeHeroSlider.prototype.order=-1;
+	
+	//大英雄区轮播图片切换方法
+	HomeHeroSlider.prototype.change=function(){
+		var order= HomeHeroSlider.prototype.order;
+		if(order==-1){
+			HomeHeroSlider.prototype.order=1;
+			return;
+		}
+		//查询所有轮播图片
+		var img=$(".ui-viewport img");
+		
+		//图片淡出
+		img.eq(order-1).css({
+			"opacity":0,
+			"z-index":-1
+		});
+		
+		//图片淡入
+		img.eq(order).css({
+			"opacity":1,
+			"z-index":50
+		});
+		
+		HomeHeroSlider.prototype.order=(order==4)?0:order+1;
+	}
+	
+	//设置大英雄区鼠标点击事件
+	HomeHeroSlider.prototype.mouse=function(){
+		var prev=$(".home-hero-container .ui-prev");
+		prev.click(function(){
+			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
+		});
+		var next=$(".home-hero-container .ui-next");
+		next.click(function(){
+			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
+		});
+	}
+	
+	//设置大英雄区图片轮播定时器
+	var heroSlider=factory("HomeHeroSlider");
+	var heroSliderTimer=setInterval(heroSlider.change,3000);
+	
+	//调用mouse函数
+	heroSlider.mouse();
 });
