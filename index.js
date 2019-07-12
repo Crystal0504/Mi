@@ -269,32 +269,93 @@ $(document).ready(function() {
 		
 	}
 	
+	//检测按钮向前还是向后
+	HomeHeroSlider.prototype.direction="next";
+	
 	//记录大英雄区轮播图片序号	
-	HomeHeroSlider.prototype.order=-1;
+	HomeHeroSlider.prototype.order=0;
 	
 	//大英雄区轮播图片切换方法
 	HomeHeroSlider.prototype.change=function(){
-		var order= HomeHeroSlider.prototype.order;
-		if(order==-1){
-			HomeHeroSlider.prototype.order=1;
-			return;
-		}
+		// var order= HomeHeroSlider.prototype.order;
+		// if(order==-1){
+		// 	HomeHeroSlider.prototype.order=1;
+		// 	return;
+		// }
+		// //查询所有轮播图片
+		// var img=$(".ui-viewport img");
+		// 
+		// //图片淡出
+		// img.eq(order-1).css({
+		// 	"opacity":0,
+		// 	"z-index":-1
+		// });
+		// 
+		// //图片淡入
+		// img.eq(order).css({
+		// 	"opacity":1,
+		// 	"z-index":50
+		// });
+		// 
+		// HomeHeroSlider.prototype.order=(order==4)?0:order+1;
+		
 		//查询所有轮播图片
-		var img=$(".ui-viewport img");
+		var img=$(".home-hero-slider .ui-viewport img");
+		var order= HomeHeroSlider.prototype.order;
+		var direction=HomeHeroSlider.prototype.direction;
 		
-		//图片淡出
-		img.eq(order-1).css({
+		//选中所有球形按钮
+		var paperLink=$(".home-hero-slider .ui-paper-link");
+		
+		//取消球形按钮的选中样式
+		paperLink.eq(order).removeClass("active");
+		
+		if(direction=="next"){
+			order++;
+			if(order>4){
+				order=0;
+			}
+		}
+		else if(direction=="prev"){
+			order--;
+			if(order<0){
+				order=4;
+			}
+		}
+		img.eq(order).siblings().css({
 			"opacity":0,
-			"z-index":-1
+		 	"z-index":-1
 		});
-		
-		//图片淡入
 		img.eq(order).css({
 			"opacity":1,
-			"z-index":50
+		 	"z-index":50
 		});
+		HomeHeroSlider.prototype.order=order;
 		
-		HomeHeroSlider.prototype.order=(order==4)?0:order+1;
+		// 添加球形按钮样式
+		paperLink.eq(order).addClass("active");
+	}
+	
+	//图片轮播方法封装
+	HomeHeroSlider.prototype.changeTo=function(index){
+		var img=$(".home-hero-slider .ui-viewport img");
+		
+		//选中所有球形按钮
+		var paperLink=$(".home-hero-slider .ui-paper-link");
+		
+		//取消球形按钮的选中样式
+		paperLink.removeClass("active");
+		img.eq(index).siblings().css({
+			"opacity":0,
+		 	"z-index":-1
+		});
+		img.eq(index).css({
+			"opacity":1,
+		 	"z-index":50
+		});
+		HomeHeroSlider.prototype.order=index;
+		// 添加球形按钮样式
+		paperLink.eq(index).addClass("active");
 	}
 	
 	//设置大英雄区鼠标点击事件
@@ -302,10 +363,21 @@ $(document).ready(function() {
 		var prev=$(".home-hero-container .ui-prev");
 		prev.click(function(){
 			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
+			HomeHeroSlider.prototype.direction="prev";
+			HomeHeroSlider.prototype.change();
 		});
 		var next=$(".home-hero-container .ui-next");
 		next.click(function(){
 			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
+			HomeHeroSlider.prototype.direction="next";
+			HomeHeroSlider.prototype.change();
+		});
+		
+		//球形按钮点击事件
+		$(".home-hero-slider .ui-paper-link").click(function(){
+			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
+			var index=$(this).data("slide-index");
+			HomeHeroSlider.prototype.changeTo(index);
 		});
 	}
 	
