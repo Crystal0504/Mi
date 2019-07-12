@@ -512,6 +512,7 @@
 			overflow: hidden;
 			position: relative;
 			.ui-viewport {
+				cursor: pointer;
 				img {
 					height: 460/16rem;
 					position: absolute;
@@ -534,6 +535,10 @@
 						display: block;
 						height: 69/16rem;
 						width: 41/16rem;
+						cursor: pointer;
+						-moz-user-select:none;
+						-webkit-user-select:none;
+						-ms-user-select:none;
 					}
 					.ui-prev {
 						left: 234/16rem;
@@ -559,7 +564,11 @@
 					z-index: 51;
 					bottom: 20/16rem;
 					right: 30/16rem;
+					cursor: default;
 					text-align: right;
+					-moz-user-select:none;
+					-webkit-user-select:none;
+					-ms-user-select:none;
 					.ui-paper-link{
 						display: inline-block;
 						width: 6/16rem;
@@ -572,6 +581,11 @@
 						transition-property: all;
 						transition-duration: 0.2s;
 						transition-timing-function: ease;
+						cursor: pointer;
+						&:hover{
+							background-color: rgba(255, 255, 255, 0.4);
+							border-color: rgba(0, 0, 0, 0.4);
+						}
 					}
 					.active{
 						background-color: rgba(255, 255, 255, 0.4) !important;
