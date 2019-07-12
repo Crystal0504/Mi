@@ -478,6 +478,9 @@
   overflow: hidden;
   position: relative;
 }
+.home-hero-container .home-hero .home-hero-slider .ui-viewport {
+  cursor: pointer;
+}
 .home-hero-container .home-hero .home-hero-slider .ui-viewport img {
   height: 28.75rem;
   position: absolute;
@@ -497,6 +500,10 @@
   display: block;
   height: 4.3125rem;
   width: 2.5625rem;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .home-hero-container .home-hero .home-hero-slider .ui-controls .ui-controls-direction .ui-prev {
   left: 14.625rem;
@@ -521,7 +528,11 @@
   z-index: 51;
   bottom: 1.25rem;
   right: 1.875rem;
+  cursor: default;
   text-align: right;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .home-hero-container .home-hero .home-hero-slider .ui-controls .ui-paper .ui-paper-link {
   display: inline-block;
@@ -535,6 +546,11 @@
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+  cursor: pointer;
+}
+.home-hero-container .home-hero .home-hero-slider .ui-controls .ui-paper .ui-paper-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 .home-hero-container .home-hero .home-hero-slider .ui-controls .ui-paper .active {
   background-color: rgba(255, 255, 255, 0.4) !important;
