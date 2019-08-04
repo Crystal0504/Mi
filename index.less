@@ -764,6 +764,121 @@
 				}
 			}
 		}
-		
+		.box-body{
+			clear: both;
+			width: 1226/16rem;
+			height: 340/16rem;
+			overflow: hidden;
+			margin-bottom: 40/16rem;
+			.wrapper{
+				overflow: hidden;
+				.carousel-list{
+					width: 2480/16rem;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					.item{
+						float: left;
+						width: 234/16rem;
+						height: 340/16rem;
+						background-color: #fafafa;
+						margin-right:14/16rem;
+						text-align: center;
+						.time-title{
+							text-decoration: none;
+							color: #ef3a3b;
+							font-size: 21/16rem;
+							margin-top: 39/16rem;
+							padding-top: 15/16rem;
+						}
+						.image{
+							margin: 0 0 25/16rem 0;
+						}
+						.text{
+							color: rgba(0, 0, 0, 0.54);
+							font-size: 15/16rem;
+							margin: 0;
+						}
+						.timer{
+							width: 168/16rem;
+							height: 46/16rem;
+							margin: 28/16rem 33/16rem 0;
+							.box{
+								float: left;
+								width: 46/16rem;
+								height: 46/16rem;
+								background-color: #605751;
+							}
+							.dosh{
+								float: left;
+								width: 15/16rem;
+								height: 46/16rem;
+								font-size: 28/16rem;
+								line-height: 46/16rem;
+							}
+						}
+						.thumb{
+							display: block;
+							width: 160/16rem;
+							height: 166/16rem;
+							margin-top: 39/16rem;
+							margin-left: 37/16rem;
+							margin-right: 37/16rem;
+							margin-bottom: 22/16rem;
+							img{
+								width: 160/16rem;
+								height: 160/16rem;
+							}
+						}
+						.title{
+							margin: 0 20/16rem 3/16rem;
+							display: block;
+							color: #212121;
+							text-decoration: none;
+							overflow: hidden;//多余文字隐藏
+							text-overflow:ellipsis;//多余文字用...代替
+							white-space: nowrap;//文字不换行
+						}
+						.desc{
+							width: 194/16rem;
+							margin: 0 20/16rem 12/16rem 20/16rem;
+							font-size: 12/16rem;
+							height: 18/16rem;
+							line-height: 18/16rem;
+							color: #b0b0b0;
+							overflow: hidden;
+							text-overflow:ellipsis;
+							white-space: nowrap;
+						}
+						.price{
+							color:@color;
+							font-size: 14/16rem;
+							margin: 0;
+							del{
+								color: #b0b0b0;
+							}
+						}
+					}
+					.time{
+						background-color: rgb(241, 237, 237);
+					}
+					.red{
+						border-top: 1/16rem solid  #e53935;
+					}
+					.orange{
+						border-top: 1/16rem solid  #ffac13;
+					}
+					.green{
+						border-top: 1/16rem solid  #83c44e;
+					}
+					.blue{
+						border-top: 1/16rem solid  #2196f3;
+					}
+					.bluegreen{
+						border-top: 1/16rem solid  #00c0a5;
+					}
+				}
+			}
+		}
 	}
 }
