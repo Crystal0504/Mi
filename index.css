@@ -715,3 +715,119 @@
 .home-hero-container .home-star-goods .box-header .more .control-next {
   border-left: none;
 }
+.home-hero-container .home-star-goods .box-body {
+  clear: both;
+  width: 76.625rem;
+  height: 21.25rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.home-hero-container .home-star-goods .box-body .wrapper {
+  overflow: hidden;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list {
+  width: 155rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item {
+  float: left;
+  width: 14.625rem;
+  height: 21.25rem;
+  background-color: #fafafa;
+  margin-right: 0.875rem;
+  text-align: center;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .time-title {
+  text-decoration: none;
+  color: #ef3a3b;
+  font-size: 1.3125rem;
+  margin-top: 2.4375rem;
+  padding-top: 0.9375rem;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .image {
+  margin: 0 0 1.5625rem 0;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .text {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer {
+  width: 10.5rem;
+  height: 2.875rem;
+  margin: 1.75rem 2.0625rem 0;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer .box {
+  float: left;
+  width: 2.875rem;
+  height: 2.875rem;
+  background-color: #605751;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer .dosh {
+  float: left;
+  width: 0.9375rem;
+  height: 2.875rem;
+  font-size: 1.75rem;
+  line-height: 2.875rem;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .thumb {
+  display: block;
+  width: 10rem;
+  height: 10.375rem;
+  margin-top: 2.4375rem;
+  margin-left: 2.3125rem;
+  margin-right: 2.3125rem;
+  margin-bottom: 1.375rem;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .thumb img {
+  width: 10rem;
+  height: 10rem;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .title {
+  margin: 0 1.25rem 0.1875rem;
+  display: block;
+  color: #212121;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .desc {
+  width: 12.125rem;
+  margin: 0 1.25rem 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  color: #b0b0b0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .price {
+  color: #ff6700;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .price del {
+  color: #b0b0b0;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .time {
+  background-color: #f1eded;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .red {
+  border-top: 0.0625rem solid #e53935;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .orange {
+  border-top: 0.0625rem solid #ffac13;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .green {
+  border-top: 0.0625rem solid #83c44e;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .blue {
+  border-top: 0.0625rem solid #2196f3;
+}
+.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .bluegreen {
+  border-top: 0.0625rem solid #00c0a5;
+}
