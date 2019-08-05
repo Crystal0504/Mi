@@ -703,14 +703,25 @@
   height: 1rem;
   color: #b0b0b0;
   line-height: 1rem;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   border: 0.0625rem solid #b0b0b0;
   padding: 0.1875rem 0.3125rem 0.1875rem 0.3125rem;
   float: left;
+  cursor: pointer;
+}
+.home-hero-container .home-star-goods .box-header .more .control:hover > i {
+  color: #ff6700;
 }
 .home-hero-container .home-star-goods .box-header .more .control i {
   font-size: 0.875rem !important;
+}
+.home-hero-container .home-star-goods .box-header .more .control-active {
+  color: #e0e0e0;
+}
+.home-hero-container .home-star-goods .box-header .more .control-active:hover {
+  cursor: default;
 }
 .home-hero-container .home-star-goods .box-header .more .control-next {
   border-left: none;
@@ -724,12 +735,17 @@
 }
 .home-hero-container .home-star-goods .box-body .wrapper {
   overflow: hidden;
+  padding-bottom: 2.5rem;
 }
 .home-hero-container .home-star-goods .box-body .wrapper .carousel-list {
   width: 155rem;
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 .home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item {
   float: left;
@@ -738,39 +754,6 @@
   background-color: #fafafa;
   margin-right: 0.875rem;
   text-align: center;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .time-title {
-  text-decoration: none;
-  color: #ef3a3b;
-  font-size: 1.3125rem;
-  margin-top: 2.4375rem;
-  padding-top: 0.9375rem;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .image {
-  margin: 0 0 1.5625rem 0;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .text {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 0.9375rem;
-  margin: 0;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer {
-  width: 10.5rem;
-  height: 2.875rem;
-  margin: 1.75rem 2.0625rem 0;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer .box {
-  float: left;
-  width: 2.875rem;
-  height: 2.875rem;
-  background-color: #605751;
-}
-.home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .timer .dosh {
-  float: left;
-  width: 0.9375rem;
-  height: 2.875rem;
-  font-size: 1.75rem;
-  line-height: 2.875rem;
 }
 .home-hero-container .home-star-goods .box-body .wrapper .carousel-list .item .thumb {
   display: block;
