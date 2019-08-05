@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var search = $("#search");
 	var searchHotWords = $(".search-hot-words");
 	var keywordsList = $(".keywords-list");
-	var headerNavMenu=$(".header-nav-menu");
+	var headerNavMenu = $(".header-nav-menu");
 	// 购物车菜单弹出以及收回
 
 
@@ -40,23 +40,23 @@ $(document).ready(function() {
 
 	TopBarCart.prototype.mouse = function() {
 		var cartMenuArray = TopBarCart.prototype.cartMenuArray;
-		
+
 		//鼠标移入购物车
 		cart.mouseenter(function() {
 			cartMenuArray.forEach(function(one) {
 				clearTimeout(one);
 			});
-			cartMenuArray.length=0;
+			cartMenuArray.length = 0;
 			var timer = setTimeout(TopBarCart.prototype.showCartMenu, 100);
 			cartMenuArray.push(timer);
 		});
-		
+
 		//鼠标移出购物车
 		cart.mouseleave(function() {
 			cartMenuArray.forEach(function(one) {
 				clearTimeout(one);
 			});
-			cartMenuArray.length=0
+			cartMenuArray.length = 0
 			var timer = setTimeout(TopBarCart.prototype.hideCartMenu, 100);
 			cartMenuArray.push(timer);
 		});
@@ -68,8 +68,10 @@ $(document).ready(function() {
 			return new TopBarCart();
 		} else if (key == "HeaderSearch") {
 			return new HeaderSearch();
-		}else if(key=="HomeHeroSlider"){
+		} else if (key == "HomeHeroSlider") {
 			return new HomeHeroSlider();
+		} else if (key == "HomeStarGoods") {
+			return new HomeStarGoods();
 		}
 	}
 	// 调用方法
@@ -107,7 +109,7 @@ $(document).ready(function() {
 			"transition-timing-function": "ease",
 			"background-color": "#fff",
 			"color": "#616161",
-			"border": 1/16+"rem solid #bbb"
+			"border": 1 / 16 + "rem solid #bbb"
 		});
 	}
 
@@ -119,13 +121,13 @@ $(document).ready(function() {
 			"transition-timing-function": "ease-out",
 			"background-color": "#fff",
 			"color": "#616161",
-			"border": 1/16+"rem solid #e0e0e0"
+			"border": 1 / 16 + "rem solid #e0e0e0"
 		});
 	}
 
 	// 搜索框边框颜色变浅方法
 	HeaderSearch.prototype.lightSearch = function() {
-		var border = 1/16+"rem solid #e0e0e0";
+		var border = 1 / 16 + "rem solid #e0e0e0";
 		search.css({
 			"transition-property": "all",
 			"transition-duration": "0.2s",
@@ -138,7 +140,7 @@ $(document).ready(function() {
 
 	// 搜索框边框颜色变深方法
 	HeaderSearch.prototype.darkSearch = function() {
-		var border = 1/16+"rem solid #bbb";
+		var border = 1 / 16 + "rem solid #bbb";
 		search.css({
 			"transition-property": "all",
 			"transition-duration": "0.2s",
@@ -147,36 +149,36 @@ $(document).ready(function() {
 			"border-bottom": border,
 			"border-top": border
 		});
-}
+	}
 
-	HeaderSearch.prototype.navMenuArray=[];
+	HeaderSearch.prototype.navMenuArray = [];
 
 	// 显示标题栏弹出菜单
-	HeaderSearch.prototype.showNavMenu=function(){
-		var navMenuArray=HeaderSearch.prototype.navMenuArray;
-		navMenuArray.forEach(function(one){
+	HeaderSearch.prototype.showNavMenu = function() {
+		var navMenuArray = HeaderSearch.prototype.navMenuArray;
+		navMenuArray.forEach(function(one) {
 			clearTimeout(one);
 		});
-		navMenuArray.length=0;
+		navMenuArray.length = 0;
 		headerNavMenu.slideDown(300);
-		var timer=setTimeout("$('.header-nav-menu').slideDown(300)",200);
+		var timer = setTimeout("$('.header-nav-menu').slideDown(300)", 200);
 		navMenuArray.push(timer);
 	}
-	
+
 	// 隐藏标题栏弹出菜单
-	HeaderSearch.prototype.hideNavMenu=function(){
-		var navMenuArray=HeaderSearch.prototype.navMenuArray;
-		navMenuArray.forEach(function(one){
+	HeaderSearch.prototype.hideNavMenu = function() {
+		var navMenuArray = HeaderSearch.prototype.navMenuArray;
+		navMenuArray.forEach(function(one) {
 			clearTimeout(one);
 		});
-		navMenuArray.length=0;
+		navMenuArray.length = 0;
 		headerNavMenu.slideDown(300);
-		var timer=setTimeout("$('.header-nav-menu').slideUp(300)",200);
+		var timer = setTimeout("$('.header-nav-menu').slideUp(300)", 200);
 		navMenuArray.push(timer);
 	}
 
 
-	
+
 	//搜索框，按钮方法合成为mouse方法
 	HeaderSearch.prototype.mouse = function() {
 
@@ -220,7 +222,7 @@ $(document).ready(function() {
 
 	//搜索框获取焦点
 	search.focus(function() {
-		var border = 1/16+"rem solid #ff6700";
+		var border = 1 / 16 + "rem solid #ff6700";
 		search.css({
 			"border-top": border,
 			"border-left": border,
@@ -241,42 +243,42 @@ $(document).ready(function() {
 		HeaderSearch.prototype.lightSearch();
 		HeaderSearch.prototype.lightBtn();
 	});
-	
+
 	//鼠标移入标题栏显示弹出菜单
-	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseenter(function(){
-		var menu=$(this).data("menu");
-		if(menu!=null){
-			for(var i=1;i<=8;i++){
-				$("#menu-"+i).css("display","none");
-			if(menu=="menu-"+i)	{
-				$("#menu-"+i).css("display","block");
-			}
+	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseenter(function() {
+		var menu = $(this).data("menu");
+		if (menu != null) {
+			for (var i = 1; i <= 8; i++) {
+				$("#menu-" + i).css("display", "none");
+				if (menu == "menu-" + i) {
+					$("#menu-" + i).css("display", "block");
+				}
 			}
 		}
 		HeaderSearch.prototype.showNavMenu();
 	});
-	
+
 	//鼠标移出标题栏隐藏弹出菜单
-	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseleave(function(){
+	$(".nav-list .nav-item:lt(8) a,.header-nav-menu").mouseleave(function() {
 		HeaderSearch.prototype.hideNavMenu();
 	});
-	
+
 	var headSearch = factory("HeaderSearch");
 	headSearch.mouse();
-	
+
 	//大英雄区图片轮播效果
-	function HomeHeroSlider(){
-		
+	function HomeHeroSlider() {
+
 	}
-	
+
 	//检测按钮向前还是向后
-	HomeHeroSlider.prototype.direction="next";
-	
+	HomeHeroSlider.prototype.direction = "next";
+
 	//记录大英雄区轮播图片序号	
-	HomeHeroSlider.prototype.order=0;
-	
+	HomeHeroSlider.prototype.order = 0;
+
 	//大英雄区轮播图片切换方法
-	HomeHeroSlider.prototype.change=function(){
+	HomeHeroSlider.prototype.change = function() {
 		// var order= HomeHeroSlider.prototype.order;
 		// if(order==-1){
 		// 	HomeHeroSlider.prototype.order=1;
@@ -298,93 +300,150 @@ $(document).ready(function() {
 		// });
 		// 
 		// HomeHeroSlider.prototype.order=(order==4)?0:order+1;
-		
+
 		//查询所有轮播图片
-		var img=$(".home-hero-slider .ui-viewport img");
-		var order= HomeHeroSlider.prototype.order;
-		var direction=HomeHeroSlider.prototype.direction;
-		
+		var img = $(".home-hero-slider .ui-viewport img");
+		var order = HomeHeroSlider.prototype.order;
+		var direction = HomeHeroSlider.prototype.direction;
+
 		//选中所有球形按钮
-		var paperLink=$(".home-hero-slider .ui-paper-link");
-		
+		var paperLink = $(".home-hero-slider .ui-paper-link");
+
 		//取消球形按钮的选中样式
 		paperLink.eq(order).removeClass("active");
-		
-		if(direction=="next"){
+
+		if (direction == "next") {
 			order++;
-			if(order>4){
-				order=0;
+			if (order > 4) {
+				order = 0;
 			}
-		}
-		else if(direction=="prev"){
+		} else if (direction == "prev") {
 			order--;
-			if(order<0){
-				order=4;
+			if (order < 0) {
+				order = 4;
 			}
 		}
 		img.eq(order).siblings().css({
-			"opacity":0,
-		 	"z-index":-1
+			"opacity": 0,
+			"z-index": -1
 		});
 		img.eq(order).css({
-			"opacity":1,
-		 	"z-index":50
+			"opacity": 1,
+			"z-index": 50
 		});
-		HomeHeroSlider.prototype.order=order;
-		
+		HomeHeroSlider.prototype.order = order;
+
 		// 添加球形按钮样式
 		paperLink.eq(order).addClass("active");
 	}
-	
+
 	//图片轮播方法封装
-	HomeHeroSlider.prototype.changeTo=function(index){
-		var img=$(".home-hero-slider .ui-viewport img");
-		
+	HomeHeroSlider.prototype.changeTo = function(index) {
+		var img = $(".home-hero-slider .ui-viewport img");
+
 		//选中所有球形按钮
-		var paperLink=$(".home-hero-slider .ui-paper-link");
-		
+		var paperLink = $(".home-hero-slider .ui-paper-link");
+
 		//取消球形按钮的选中样式
 		paperLink.removeClass("active");
 		img.eq(index).siblings().css({
-			"opacity":0,
-		 	"z-index":-1
+			"opacity": 0,
+			"z-index": -1
 		});
 		img.eq(index).css({
-			"opacity":1,
-		 	"z-index":50
+			"opacity": 1,
+			"z-index": 50
 		});
-		HomeHeroSlider.prototype.order=index;
+		HomeHeroSlider.prototype.order = index;
 		// 添加球形按钮样式
 		paperLink.eq(index).addClass("active");
 	}
-	
+
 	//设置大英雄区鼠标点击事件
-	HomeHeroSlider.prototype.mouse=function(){
-		var prev=$(".home-hero-container .ui-prev");
-		prev.click(function(){
-			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
-			HomeHeroSlider.prototype.direction="prev";
+	HomeHeroSlider.prototype.mouse = function() {
+		var prev = $(".home-hero-container .ui-prev");
+		prev.click(function() {
+			clearInterval(heroSliderTimer); //取消大英雄区图片轮播定时器
+			HomeHeroSlider.prototype.direction = "prev";
 			HomeHeroSlider.prototype.change();
 		});
-		var next=$(".home-hero-container .ui-next");
-		next.click(function(){
-			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
-			HomeHeroSlider.prototype.direction="next";
+		var next = $(".home-hero-container .ui-next");
+		next.click(function() {
+			clearInterval(heroSliderTimer); //取消大英雄区图片轮播定时器
+			HomeHeroSlider.prototype.direction = "next";
 			HomeHeroSlider.prototype.change();
 		});
-		
+
 		//球形按钮点击事件
-		$(".home-hero-slider .ui-paper-link").click(function(){
-			clearInterval(heroSliderTimer);//取消大英雄区图片轮播定时器
-			var index=$(this).data("slide-index");
+		$(".home-hero-slider .ui-paper-link").click(function() {
+			clearInterval(heroSliderTimer); //取消大英雄区图片轮播定时器
+			var index = $(this).data("slide-index");
 			HomeHeroSlider.prototype.changeTo(index);
 		});
 	}
-	
+
 	//设置大英雄区图片轮播定时器
-	var heroSlider=factory("HomeHeroSlider");
-	var heroSliderTimer=setInterval(heroSlider.change,3000);
-	
+	var heroSlider = factory("HomeHeroSlider");
+	var heroSliderTimer = setInterval(heroSlider.change, 3000);
+
 	//调用mouse函数
 	heroSlider.mouse();
+
+
+	//小米闪购
+	// $(".carousel-list").css("margin-left","-1226px");
+	function HomeStarGoods() {
+
+	}
+	HomeStarGoods.prototype.direction = "prev"; //切换状态
+	HomeStarGoods.prototype.tiemer = null; //定时器
+	HomeStarGoods.prototype.change = function() {
+		var direction = HomeStarGoods.prototype.direction;
+		var temp = 0;
+		if (direction == "prev") {
+			temp = -1226 / 16 + "rem";
+			HomeStarGoods.prototype.direction = "next";
+			var control=$(".control-next");
+			control.siblings().removeClass("control-active");
+			control.addClass("control-active");
+		} else {
+			temp = 0
+			HomeStarGoods.prototype.direction = "prev";
+			var control=$(".control-prev");
+			control.siblings().removeClass("control-active");
+			control.addClass("control-active");
+		}
+		$(".carousel-list").css("margin-left", temp);
+	}
+	HomeStarGoods.prototype.mouse = function() {
+		$(".control-prev").click(function() {
+			var direction = HomeStarGoods.prototype.direction;
+			if (direction == "next") {
+				HomeStarGoods.prototype.change();
+				HomeStarGoods.prototype.initTimer();
+				$(this).siblings().removeClass("control-active");
+				$(this).addClass("control-active");
+			}
+		});
+		$(".control-next").click(function() {
+			var direction = HomeStarGoods.prototype.direction;
+			if (direction == "prev") {
+				HomeStarGoods.prototype.change();
+				HomeStarGoods.prototype.initTimer();
+				$(this).siblings().removeClass("control-active");
+				$(this).addClass("control-active");
+			}
+		});
+	}
+
+	HomeStarGoods.prototype.initTimer = function() {
+		clearInterval(HomeStarGoods.prototype.timer);
+		HomeStarGoods.prototype.timer = setInterval(function() {
+			HomeStarGoods.prototype.change();
+		}, 5000);
+	}
+
+	var starGoods = factory("HomeStarGoods");
+	starGoods.mouse();
+	starGoods.initTimer();
 });
