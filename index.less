@@ -747,13 +747,24 @@
 					height: 16/16rem;
 					color: #b0b0b0;
 					line-height: 16/16rem;
+					font-weight: 400;
 					text-align: center;
 					text-decoration: none;
 					border: 1/16rem solid #b0b0b0;
 					padding: 3/16rem 5/16rem 3/16rem 5/16rem;
 					float: left;
+					cursor: pointer;
+					&:hover>i{
+						color: #ff6700;
+					}
 					i{
 						font-size: 14/16rem !important;
+					}
+				}
+				.control-active{
+					color: #e0e0e0;
+					&:hover{
+						cursor: default;
 					}
 				}
 				.control-prev{
@@ -772,11 +783,16 @@
 			margin-bottom: 40/16rem;
 			.wrapper{
 				overflow: hidden;
+				padding-bottom: 40/16rem;
 				.carousel-list{
 					width: 2480/16rem;
 					margin: 0;
 					padding: 0;
 					list-style: none;
+					overflow: hidden;
+					transition-property: all;
+					transition-duration: 0.5s;
+					transition-timing-function: linear;
 					.item{
 						float: left;
 						width: 234/16rem;
@@ -784,39 +800,6 @@
 						background-color: #fafafa;
 						margin-right:14/16rem;
 						text-align: center;
-						.time-title{
-							text-decoration: none;
-							color: #ef3a3b;
-							font-size: 21/16rem;
-							margin-top: 39/16rem;
-							padding-top: 15/16rem;
-						}
-						.image{
-							margin: 0 0 25/16rem 0;
-						}
-						.text{
-							color: rgba(0, 0, 0, 0.54);
-							font-size: 15/16rem;
-							margin: 0;
-						}
-						.timer{
-							width: 168/16rem;
-							height: 46/16rem;
-							margin: 28/16rem 33/16rem 0;
-							.box{
-								float: left;
-								width: 46/16rem;
-								height: 46/16rem;
-								background-color: #605751;
-							}
-							.dosh{
-								float: left;
-								width: 15/16rem;
-								height: 46/16rem;
-								font-size: 28/16rem;
-								line-height: 46/16rem;
-							}
-						}
 						.thumb{
 							display: block;
 							width: 160/16rem;
