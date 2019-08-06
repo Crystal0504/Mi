@@ -3,6 +3,8 @@
 
 仅供个人学习使用，严禁用于商业行为！！！
 
+Only for personal learning and use, strictly forbidden for commercial activities!!!
+
 2019-03-23
 
   1.顶栏
