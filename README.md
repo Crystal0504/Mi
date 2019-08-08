@@ -138,3 +138,19 @@ Only for personal learning and use, strictly forbidden for commercial activities
 	   5.3 完善"手机"版块细节
 	   
 	   （"手机"版块已全部完成）
+	   
+  6.分隔广告位
+	
+	   6.1 完成广告图片布局
+	   
+	   （分隔广告位已全部完成）
+	
+2019-08-08
+
+  7."家电"版块
+	 
+	   7.1 完成"家电"版块标题和右方按钮
+	   
+	   7.2 完成"家电"版块图片布局
+	   
+	   7.3 完善"家电"版块细节
