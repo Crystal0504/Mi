@@ -154,3 +154,17 @@ Only for personal learning and use, strictly forbidden for commercial activities
 	   7.2 完成"家电"版块图片布局
 	   
 	   7.3 完善"家电"版块细节
+	   
+	   （"家电"板块布局完成）
+	   
+2019-08-13
+
+  8."智能"版块
+  
+	   7.1 完成"智能"版块标题和右方按钮
+	   
+	   7.2 完成"智能"版块图片布局
+	   
+	   7.3 完善"智能"版块细节
+	   
+	   （"智能"板块布局完成）
