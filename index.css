@@ -1036,7 +1036,7 @@
   list-style: none;
   cursor: pointer;
 }
-.page-main .container .homeelec .box-hd .more ul li:nth-child(1) {
+.page-main .container .homeelec .box-hd .more ul .more1 {
   color: #ff6700;
   border-bottom: 2px solid #ff6700;
 }
@@ -1197,6 +1197,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.page-main .container .homeelec .raw .span8 .list .item-s .title-s {
+  text-decoration: none;
+  color: #333;
+  margin: -0.625rem 6.875rem 0.3125rem 1.875rem;
+  text-align: left;
+  width: 5.875rem;
+  height: 1.3125rem;
+  padding: 0;
+}
 .page-main .container .homeelec .raw .span8 .list .item-s .big {
   font-size: 1.125rem;
   margin-bottom: 0.3125rem;
@@ -1248,7 +1257,7 @@
   list-style: none;
   cursor: pointer;
 }
-.page-main .container .smart .box-hd .more ul li:nth-child(1) {
+.page-main .container .smart .box-hd .more ul .more1 {
   color: #ff6700;
   border-bottom: 2px solid #ff6700;
 }
@@ -1409,6 +1418,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.page-main .container .smart .raw .span8 .list .item-s .title-s {
+  text-decoration: none;
+  color: #333;
+  margin: -0.625rem 6.875rem 0.3125rem 1.875rem;
+  text-align: left;
+  width: 5.875rem;
+  height: 1.3125rem;
+  padding: 0;
+}
 .page-main .container .smart .raw .span8 .list .item-s .big {
   font-size: 1.125rem;
   margin-bottom: 0.3125rem;
@@ -1419,6 +1437,660 @@
   margin-bottom: 0.3125rem;
 }
 .page-main .container .smart .raw .span8 .list .item-s .text {
+  font-size: 0.75rem;
+  color: #757575;
+}
+.page-main .container .collocation {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.page-main .container .collocation .box-hd {
+  width: 76.625rem;
+  height: 3.625rem;
+  float: left;
+}
+.page-main .container .collocation .box-hd .title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  float: left;
+}
+.page-main .container .collocation .box-hd .more {
+  width: 9.75rem;
+  height: 2.625rem;
+  float: right;
+  bottom: 1rem;
+  position: relative;
+}
+.page-main .container .collocation .box-hd .more ul {
+  display: block;
+  width: 17.5rem;
+  height: 1.625rem;
+  padding: 1rem 0 0;
+}
+.page-main .container .collocation .box-hd .more ul li {
+  margin-left: 1.875rem;
+  font-size: 1rem;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+}
+.page-main .container .collocation .box-hd .more ul .more1 {
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.page-main .container .collocation .raw {
+  display: block;
+  margin-top: 0.5rem;
+  width: 76.625rem;
+  height: 42.875rem;
+}
+.page-main .container .collocation .raw .span-first .promo {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.page-main .container .collocation .raw .span-first .promo .item {
+  width: 14.625rem;
+  height: 18.75rem;
+  list-style: none;
+  margin-bottom: 0.875rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .collocation .raw .span-first .promo .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .collocation .raw .span-first .promo .item a img {
+  width: 14.625rem;
+  height: 18.75rem;
+}
+.page-main .container .collocation .raw .span8 .list {
+  width: 62rem;
+  height: 38.375rem;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.page-main .container .collocation .raw .span8 .list .item {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  float: left;
+  padding: 2.125rem 0 1.25rem 0;
+  margin: 0 0 0.875rem 0.875rem;
+  width: 14.625rem;
+  height: 15.375rem;
+  list-style: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .collocation .raw .span8 .list .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .collocation .raw .span8 .list .item a {
+  display: block;
+  text-align: center;
+}
+.page-main .container .collocation .raw .span8 .list .item a img {
+  margin: 0 auto 1.125rem;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.page-main .container .collocation .raw .span8 .list .item .title {
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0.625rem 0 0.625rem;
+  display: block;
+  color: #212121;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-main .container .collocation .raw .span8 .list .item .desc {
+  margin: 0 0.625rem 0.625rem 0.625rem;
+  font-size: 0.75rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  color: #b0b0b0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.page-main .container .collocation .raw .span8 .list .item .price {
+  text-align: center;
+  color: #ff6700;
+  font-size: 0.875rem;
+  margin: 0 0.625rem 0.625rem;
+}
+.page-main .container .collocation .raw .span8 .list .item .price del {
+  color: #b0b0b0;
+}
+.page-main .container .collocation .raw .span8 .list .item .flag {
+  margin-left: -2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: default;
+  top: 0;
+  position: absolute;
+  width: 4rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  background-color: #83c44e;
+  color: #fff;
+  left: 50%;
+}
+.page-main .container .collocation .raw .span8 .list .item .red {
+  background-color: #e53935;
+}
+.page-main .container .collocation .raw .span8 .list .item .green {
+  border-top: 0.0625rem solid #83c44e;
+}
+.page-main .container .collocation .raw .span8 .list .item-s {
+  display: block;
+  width: 14.625rem;
+  height: 5.8125rem;
+  padding-top: 3.125rem;
+  padding-bottom: 0;
+  margin-left: 0.875rem;
+  margin-bottom: 0.875rem;
+  position: relative;
+}
+.page-main .container .collocation .raw .span8 .list .item-s a {
+  text-decoration: none;
+}
+.page-main .container .collocation .raw .span8 .list .item-s a img {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+}
+.page-main .container .collocation .raw .span8 .list .item-s a .right {
+  display: block;
+  color: #ff6700;
+  font-size: 3.125rem;
+  font-weight: 500;
+  float: right;
+  position: absolute;
+  top: 2rem;
+  right: 2.1875rem;
+}
+.page-main .container .collocation .raw .span8 .list .item-s .title {
+  display: block;
+  width: 4.5625rem;
+  height: 1.3125rem;
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+  padding-bottom: 0.0625rem;
+}
+.page-main .container .collocation .raw .span8 .list .item-s .title-s {
+  text-decoration: none;
+  color: #333;
+  margin: -0.625rem 6.875rem 0.3125rem 1.875rem;
+  text-align: left;
+  width: 5.875rem;
+  height: 2.625rem;
+  padding: 0;
+}
+.page-main .container .collocation .raw .span8 .list .item-s .big {
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .collocation .raw .span8 .list .item-s .price {
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .collocation .raw .span8 .list .item-s .text {
+  font-size: 0.75rem;
+  color: #757575;
+}
+.page-main .container .parts {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.page-main .container .parts .box-hd {
+  width: 76.625rem;
+  height: 3.625rem;
+  float: left;
+}
+.page-main .container .parts .box-hd .title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  float: left;
+}
+.page-main .container .parts .box-hd .more {
+  width: 8.75rem;
+  height: 2.625rem;
+  float: right;
+  bottom: 1rem;
+  position: relative;
+}
+.page-main .container .parts .box-hd .more ul {
+  display: block;
+  width: 17.5rem;
+  height: 1.625rem;
+  padding: 1rem 0 0;
+}
+.page-main .container .parts .box-hd .more ul li {
+  margin-left: 1.875rem;
+  font-size: 1rem;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+}
+.page-main .container .parts .box-hd .more ul .more1 {
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.page-main .container .parts .raw {
+  display: block;
+  margin-top: 0.5rem;
+  width: 76.625rem;
+  height: 42.875rem;
+}
+.page-main .container .parts .raw .span-first .promo {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.page-main .container .parts .raw .span-first .promo .item {
+  width: 14.625rem;
+  height: 18.75rem;
+  list-style: none;
+  margin-bottom: 0.875rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .parts .raw .span-first .promo .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .parts .raw .span-first .promo .item a img {
+  width: 14.625rem;
+  height: 18.75rem;
+}
+.page-main .container .parts .raw .span8 .list {
+  width: 62rem;
+  height: 38.375rem;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.page-main .container .parts .raw .span8 .list .item {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  float: left;
+  padding: 2.125rem 0 1.25rem 0;
+  margin: 0 0 0.875rem 0.875rem;
+  width: 14.625rem;
+  height: 15.375rem;
+  list-style: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .parts .raw .span8 .list .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .parts .raw .span8 .list .item a {
+  display: block;
+  text-align: center;
+}
+.page-main .container .parts .raw .span8 .list .item a img {
+  margin: 0 auto 1.125rem;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.page-main .container .parts .raw .span8 .list .item .title {
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0.625rem 0 0.625rem;
+  display: block;
+  color: #212121;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-main .container .parts .raw .span8 .list .item .desc {
+  margin: 0 0.625rem 0.625rem 0.625rem;
+  font-size: 0.75rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  color: #b0b0b0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.page-main .container .parts .raw .span8 .list .item .price {
+  text-align: center;
+  color: #ff6700;
+  font-size: 0.875rem;
+  margin: 0 0.625rem 0.625rem;
+}
+.page-main .container .parts .raw .span8 .list .item .price del {
+  color: #b0b0b0;
+}
+.page-main .container .parts .raw .span8 .list .item .flag {
+  margin-left: -2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: default;
+  top: 0;
+  position: absolute;
+  width: 4rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  background-color: #83c44e;
+  color: #fff;
+  left: 50%;
+}
+.page-main .container .parts .raw .span8 .list .item .red {
+  background-color: #e53935;
+}
+.page-main .container .parts .raw .span8 .list .item .green {
+  border-top: 0.0625rem solid #83c44e;
+}
+.page-main .container .parts .raw .span8 .list .item-s {
+  display: block;
+  width: 14.625rem;
+  height: 5.8125rem;
+  padding-top: 3.125rem;
+  padding-bottom: 0;
+  margin-left: 0.875rem;
+  margin-bottom: 0.875rem;
+  position: relative;
+}
+.page-main .container .parts .raw .span8 .list .item-s a {
+  text-decoration: none;
+}
+.page-main .container .parts .raw .span8 .list .item-s a img {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+}
+.page-main .container .parts .raw .span8 .list .item-s a .right {
+  display: block;
+  color: #ff6700;
+  font-size: 3.125rem;
+  font-weight: 500;
+  float: right;
+  position: absolute;
+  top: 2rem;
+  right: 2.1875rem;
+}
+.page-main .container .parts .raw .span8 .list .item-s .title {
+  display: block;
+  width: 4.5625rem;
+  height: 1.3125rem;
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+  padding-bottom: 0.0625rem;
+}
+.page-main .container .parts .raw .span8 .list .item-s .title-s {
+  text-decoration: none;
+  color: #333;
+  margin: -0.625rem 6.875rem 0.3125rem 1.875rem;
+  text-align: left;
+  width: 5.875rem;
+  height: 2.625rem;
+  padding: 0;
+}
+.page-main .container .parts .raw .span8 .list .item-s .big {
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .parts .raw .span8 .list .item-s .price {
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .parts .raw .span8 .list .item-s .text {
+  font-size: 0.75rem;
+  color: #757575;
+}
+.page-main .container .peripheral {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.page-main .container .peripheral .box-hd {
+  width: 76.625rem;
+  height: 3.625rem;
+  float: left;
+}
+.page-main .container .peripheral .box-hd .title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  float: left;
+}
+.page-main .container .peripheral .box-hd .more {
+  width: 7.75rem;
+  height: 2.625rem;
+  float: right;
+  bottom: 1rem;
+  position: relative;
+}
+.page-main .container .peripheral .box-hd .more ul {
+  display: block;
+  width: 17.5rem;
+  height: 1.625rem;
+  padding: 1rem 0 0;
+}
+.page-main .container .peripheral .box-hd .more ul li {
+  margin-left: 1.875rem;
+  font-size: 1rem;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+}
+.page-main .container .peripheral .box-hd .more ul .more1 {
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.page-main .container .peripheral .raw {
+  display: block;
+  margin-top: 0.5rem;
+  width: 76.625rem;
+  height: 42.875rem;
+}
+.page-main .container .peripheral .raw .span-first .promo {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.page-main .container .peripheral .raw .span-first .promo .item {
+  width: 14.625rem;
+  height: 18.75rem;
+  list-style: none;
+  margin-bottom: 0.875rem;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .peripheral .raw .span-first .promo .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .peripheral .raw .span-first .promo .item a img {
+  width: 14.625rem;
+  height: 18.75rem;
+}
+.page-main .container .peripheral .raw .span8 .list {
+  width: 62rem;
+  height: 38.375rem;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.page-main .container .peripheral .raw .span8 .list .item {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  float: left;
+  padding: 2.125rem 0 1.25rem 0;
+  margin: 0 0 0.875rem 0.875rem;
+  width: 14.625rem;
+  height: 15.375rem;
+  list-style: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.page-main .container .peripheral .raw .span8 .list .item:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -0.125rem, 0);
+}
+.page-main .container .peripheral .raw .span8 .list .item a {
+  display: block;
+  text-align: center;
+}
+.page-main .container .peripheral .raw .span8 .list .item a img {
+  margin: 0 auto 1.125rem;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item .title {
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0.625rem 0 0.625rem;
+  display: block;
+  color: #212121;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-main .container .peripheral .raw .span8 .list .item .desc {
+  margin: 0 0.625rem 0.625rem 0.625rem;
+  font-size: 0.75rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  color: #b0b0b0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.page-main .container .peripheral .raw .span8 .list .item .price {
+  text-align: center;
+  color: #ff6700;
+  font-size: 0.875rem;
+  margin: 0 0.625rem 0.625rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item .price del {
+  color: #b0b0b0;
+}
+.page-main .container .peripheral .raw .span8 .list .item .flag {
+  margin-left: -2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: default;
+  top: 0;
+  position: absolute;
+  width: 4rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  background-color: #83c44e;
+  color: #fff;
+  left: 50%;
+}
+.page-main .container .peripheral .raw .span8 .list .item .red {
+  background-color: #e53935;
+}
+.page-main .container .peripheral .raw .span8 .list .item .green {
+  border-top: 0.0625rem solid #83c44e;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s {
+  display: block;
+  width: 14.625rem;
+  height: 5.8125rem;
+  padding-top: 3.125rem;
+  padding-bottom: 0;
+  margin-left: 0.875rem;
+  margin-bottom: 0.875rem;
+  position: relative;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s a {
+  text-decoration: none;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s a img {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s a .right {
+  display: block;
+  color: #ff6700;
+  font-size: 3.125rem;
+  font-weight: 500;
+  float: right;
+  position: absolute;
+  top: 2rem;
+  right: 2.1875rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s .title {
+  display: block;
+  width: 4.5625rem;
+  height: 1.3125rem;
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+  padding-bottom: 0.0625rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s .title-s {
+  text-decoration: none;
+  color: #333;
+  margin: -0.625rem 6.875rem 0.3125rem 1.875rem;
+  text-align: left;
+  width: 5.875rem;
+  height: 2.625rem;
+  padding: 0;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s .big {
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s .price {
+  text-align: left;
+  margin-left: 1.875rem;
+  margin-bottom: 0.3125rem;
+}
+.page-main .container .peripheral .raw .span8 .list .item-s .text {
   font-size: 0.75rem;
   color: #757575;
 }
