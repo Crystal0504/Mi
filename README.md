@@ -168,3 +168,13 @@ Only for personal learning and use, strictly forbidden for commercial activities
 	   7.3 完善"智能"版块细节
 	   
 	   （"智能"板块布局完成）
+	   
+2019-08-15
+
+  9."搭配"版块已完成
+  
+  10."配件"版块已完成
+  
+  11."周边"版块已完成
+  
+  12.各个版块不同内容切换脚本已完成
