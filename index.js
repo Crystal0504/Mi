@@ -9,6 +9,31 @@ $(document).ready(function() {
 	var searchHotWords = $(".search-hot-words");
 	var keywordsList = $(".keywords-list");
 	var headerNavMenu = $(".header-nav-menu");
+
+	var homeelecMore1=$(".homeelec .more .more1");
+	var homeelecMore2=$(".homeelec .more .more2");
+	var homeelecList1=$(".homeelec .raw .list1");
+	var homeelecList2=$(".homeelec .raw .list2");
+
+	var smartMore1=$(".smart .more .more1");
+	var smartMore2=$(".smart .more .more2");
+	var smartList1=$(".smart .raw .list1");
+	var smartList2=$(".smart .raw .list2");
+
+	var collocationMore1=$(".collocation .more .more1");
+	var collocationMore2=$(".collocation .more .more2");
+	var collocationList1=$(".collocation .raw .list1");
+	var collocationList2=$(".collocation .raw .list2");
+
+	var partsMore1=$(".parts .more .more1");
+	var partsMore2=$(".parts .more .more2");
+	var partsList1=$(".parts .raw .list1");
+	var partsList2=$(".parts .raw .list2");
+
+	var peripheralMore1=$(".peripheral .more .more1");
+	var peripheralMore2=$(".peripheral .more .more2");
+	var peripheralList1=$(".peripheral .raw .list1");
+	var peripheralList2=$(".peripheral .raw .list2");
 	// 购物车菜单弹出以及收回
 
 
@@ -446,4 +471,127 @@ $(document).ready(function() {
 	var starGoods = factory("HomeStarGoods");
 	starGoods.mouse();
 	starGoods.initTimer();
+
+
+	homeelecMore1.mouseenter(function(){
+		// alert("1");
+		homeelecMore2.removeClass("more1");
+		homeelecMore1.addClass("more1");
+		homeelecList1.css({
+			"display":"block"
+		});
+		homeelecList2.css({
+			"display":"none"
+		});
+	});
+
+	homeelecMore2.mouseenter(function(){
+		// alert("2");
+		homeelecMore1.removeClass("more1");
+		homeelecMore2.addClass("more1");
+		homeelecList1.css({
+			"display":"none"
+		});
+		homeelecList2.css({
+			"display":"block"
+		});
+	});
+
+
+	smartMore1.mouseenter(function(){
+		// alert("1");
+		smartMore2.removeClass("more1");
+		smartMore1.addClass("more1");
+		smartList1.css({
+			"display":"block"
+		});
+		smartList2.css({
+			"display":"none"
+		});
+	});
+
+	smartMore2.mouseenter(function(){
+		// alert("2");
+		smartMore1.removeClass("more1");
+		smartMore2.addClass("more1");
+		smartList1.css({
+			"display":"none"
+		});
+		smartList2.css({
+			"display":"block"
+		});
+	});
+
+
+	collocationMore1.mouseenter(function(){
+		// alert("1");
+		collocationMore2.removeClass("more1");
+		collocationMore1.addClass("more1");
+		collocationList1.css({
+			"display":"block"
+		});
+		collocationList2.css({
+			"display":"none"
+		});
+	});
+
+	collocationMore2.mouseenter(function(){
+		// alert("2");
+		collocationMore1.removeClass("more1");
+		collocationMore2.addClass("more1");
+		collocationList1.css({
+			"display":"none"
+		});
+		collocationList2.css({
+			"display":"block"
+		});
+	});
+
+	partsMore1.mouseenter(function(){
+		// alert("1");
+		partsMore2.removeClass("more1");
+		partsMore1.addClass("more1");
+		partsList1.css({
+			"display":"block"
+		});
+		partsList2.css({
+			"display":"none"
+		});
+	});
+
+	partsMore2.mouseenter(function(){
+		// alert("2");
+		partsMore1.removeClass("more1");
+		partsMore2.addClass("more1");
+		partsList1.css({
+			"display":"none"
+		});
+		partsList2.css({
+			"display":"block"
+		});
+	});
+
+	peripheralMore1.mouseenter(function(){
+		// alert("1");
+		peripheralMore2.removeClass("more1");
+		peripheralMore1.addClass("more1");
+		peripheralList1.css({
+			"display":"block"
+		});
+		peripheralList2.css({
+			"display":"none"
+		});
+	});
+
+	peripheralMore2.mouseenter(function(){
+		// alert("2");
+		peripheralMore1.removeClass("more1");
+		peripheralMore2.addClass("more1");
+		peripheralList1.css({
+			"display":"none"
+		});
+		peripheralList2.css({
+			"display":"block"
+		});
+	});
 });
