@@ -178,3 +178,9 @@ Only for personal learning and use, strictly forbidden for commercial activities
   11."周边"版块已完成
   
   12.各个版块不同内容切换脚本已完成
+  
+2019-08-16
+
+  13."视频"版块完成
+  
+  14.footer大致布局已完成
