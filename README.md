@@ -5,6 +5,10 @@
 
 Only for personal learning and use, strictly forbidden for commercial activities!!!
 
+转载请注明作者:Crystal0504和GitHub仓库地址:https://github.com/Crystal0504/Mi
+
+Reprinted please indicate the author【Crystal0504】and GitHub address【https://github.com/Crystal0504/Mi】
+
 2019-03-23
 
   1.顶栏
