@@ -34,6 +34,10 @@ $(document).ready(function() {
 	var peripheralMore2=$(".peripheral .more .more2");
 	var peripheralList1=$(".peripheral .raw .list1");
 	var peripheralList2=$(".peripheral .raw .list2");
+
+	var banner=$(".page-main .container .banner1");
+	
+	var tools=$(".tools .item-activity");
 	// 购物车菜单弹出以及收回
 
 
@@ -594,4 +598,27 @@ $(document).ready(function() {
 			"display":"block"
 		});
 	});
+
+	// var bannerTop=banner.offset().top;
+	// var windowTop=$(window).scrollTop();
+	// var num=bannerTop-windowTop;
+	function show(){
+		window.onscroll=function(){
+			var bannerTop=banner.offset().top;
+			var windowTop=$(window).scrollTop();
+			var num=bannerTop-windowTop;
+			if(num<922){
+				// console.log("yes");
+				tools.css({
+					"display":"block"
+				});
+			}else{
+				// console.log("no");
+				tools.css({
+					"display":"none"
+				});
+			}
+		}
+	}
+	show();
 });
