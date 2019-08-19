@@ -2291,6 +2291,7 @@
   font-size: 2rem;
 }
 .tools .item:nth-child(6) {
+  display: none;
   margin-top: 0.875rem;
 }
 .tools .item:nth-child(6) i {
