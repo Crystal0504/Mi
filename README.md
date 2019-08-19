@@ -5,10 +5,6 @@
 
 Only for personal learning and use, strictly forbidden for commercial activities!!!
 
-转载请注明作者:Crystal0504和GitHub仓库地址:https://github.com/Crystal0504/Mi
-
-Reprinted please indicate the author【Crystal0504】and GitHub address【https://github.com/Crystal0504/Mi】
-
 2019-03-23
 
   1.顶栏
@@ -187,4 +183,31 @@ Reprinted please indicate the author【Crystal0504】and GitHub address【https:
 
   13."视频"版块完成
   
-  14.footer大致布局已完成
+  14.footer
+  
+	   14.1 footer布局大致完成
+  
+2019-08-19
+
+	   14.2 完善footer布局
+	   
+  15.底部文字
+	   
+	   15.1 logo布局
+	   
+	   15.2 文字布局与样式
+	   
+  16.右边工具栏
+  
+		16.1 位置布局
+		
+		16.2 图片文字定位
+		
+		16.3 完成当浏览器特定元素出现时，工具栏出现"回顶部"按钮的JavaScript脚本
+		
+		16.4 完善"回顶部"功能
+		
+		
+至此，小米网页面全部完成【可喜可贺】
+
+下一个项目再见~
