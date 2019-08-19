@@ -207,6 +207,8 @@ Only for personal learning and use, strictly forbidden for commercial activities
 		
 		16.4 完善"回顶部"功能
 		
+		16.5 修复第一次加载出现"回顶部"的BUG
+		
 		
 至此，小米网页面全部完成【可喜可贺】
 
