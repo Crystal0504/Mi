@@ -209,6 +209,9 @@ Only for personal learning and use, strictly forbidden for commercial activities
 		
 		16.5 修复第一次加载出现"回顶部"的BUG
 		
+2019-08-20
+
+		16.6 修复工具栏在小屏幕设备上出现的BUG
 		
 至此，小米网页面全部完成【可喜可贺】
 
