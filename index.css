@@ -2251,9 +2251,8 @@
   width: 5.25rem;
   height: 35.0625rem;
   right: 0;
-  top: 33%;
   position: fixed;
-  bottom: 40%;
+  bottom: 4.375rem;
 }
 .tools .item {
   background-color: #fff;
