@@ -213,6 +213,7 @@ Only for personal learning and use, strictly forbidden for commercial activities
 
 		16.6 修复工具栏在小屏幕设备上出现的BUG
 		
-至此，小米网页面全部完成【可喜可贺】
+至此，小米网页面全部完成
 
-下一个项目再见~
+示例图片
+![Image text](https://github.com/Crystal0504/ExamplePictures/blob/master/img-folder/Mi.png)
