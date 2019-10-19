@@ -215,5 +215,7 @@ Only for personal learning and use, strictly forbidden for commercial activities
 		
 至此，小米网页面全部完成
 
-示例图片
-![Image text](https://github.com/Crystal0504/ExamplePictures/blob/master/img-folder/Mi.png)
+示例图片:
+![Image text](https://github.com/Crystal0504/ExamplePictures/blob/master/img-folder/Mi/1.png)
+![Image text](https://github.com/Crystal0504/ExamplePictures/blob/master/img-folder/Mi/2.png)
+![Image text](https://github.com/Crystal0504/ExamplePictures/blob/master/img-folder/Mi/3.png)
